@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-04-15">
 
-<title>blog</title>
+<title>Labinfo: Introdução – blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dc21c1100d14fda1f18056ffed7c7ac6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-dc21c1100d14fda1f18056ffed7c7ac6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,77 +69,22 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
-    };
 
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+<link rel="stylesheet" href="../../../styles.css">
+</head>
 
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
-<link rel="alternate" type="application/rss+xml" title="blog" href="index.xml" data-external="1"></head>
-
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">blog</span>
     </a>
   </div>
@@ -151,7 +95,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -174,78 +118,257 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">blog</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Labinfo: Introdução</h1>
+            <p class="subtitle lead">Um sistema replicável, escalável, gratuito, de código aberto — arquitetado para melhorar a adesão de práticas da Educação Digital em escolas públicas</p>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Educação Digital</div>
+                <div class="quarto-category">Arch Linux</div>
+                <div class="quarto-category">Open Source</div>
+                <div class="quarto-category">Soberania Digital</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 15, 2026</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXJjaCUyMExpbnV4">Arch Linux <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RWR1Y2ElQzMlQTclQzMlQTNvJTIwRGlnaXRhbA==">Educação Digital <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T3BlbiUyMFNvdXJjZQ==">Open Source <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U29iZXJhbmlhJTIwRGlnaXRhbA==">Soberania Digital <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="RWR1Y2ElQzMlQTclQzMlQTNvJTIwRGlnaXRhbCUyQ0FyY2glMjBMaW51eCUyQ09wZW4lMjBTb3VyY2UlMkNTb2JlcmFuaWElMjBEaWdpdGFs" data-listing-date-sort="1776222000000" data-listing-file-modified-sort="1777208168605" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="952">
-<div class="thumbnail"><a href="./posts/labinfo/01-intro/index.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/labinfo/01-intro/index.html" class="no-external">Labinfo: Introdução</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/labinfo/01-intro/index.html" class="no-external">Um sistema replicável, escalável, gratuito, de código aberto — arquitetado para melhorar a adesão de práticas da Educação Digital em escolas públicas</a>
+<p>No primeiro post da série, conto como este projeto surgiu — a partir de sua problemática.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RWR1Y2ElQzMlQTclQzMlQTNvJTIwRGlnaXRhbA=='); return false;">Educação Digital</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QXJjaCUyMExpbnV4'); return false;">Arch Linux</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('T3BlbiUyMFNvdXJjZQ=='); return false;">Open Source</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U29iZXJhbmlhJTIwRGlnaXRhbA=='); return false;">Soberania Digital</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/labinfo/01-intro/index.html" class="no-external">
-No primeiro post da série, conto como este projeto surgiu — a partir de sua problemática.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/labinfo/01-intro/index.html" class="no-external">
-<div class="listing-date">
-Apr 15, 2026
-</div>
-</a>
+<div class="callout-title-container flex-fill">
+Warning
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<p>Se você procura pelo resultado do projeto, confira os links abaixo:</p>
+<ul>
+<li>Download da imagem</li>
+<li>Tutorial de instalação</li>
+</ul>
 </div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</div>
+<section id="cenário" class="level2">
+<h2 class="anchored" data-anchor-id="cenário">Cenário</h2>
+<p>Em 2024, comecei a trabalhar como técnico de multimeios em uma escola pública da minha cidade. Entre várias responsabilidades, cuidar do laboratório de informática rapidamente se revelou a mais importante.</p>
+<p>Logo nas primeiras semanas, percebi um padrão estranho: fora os horários reservados para aulas específicas de informática, o laboratório permanecia quase vazio. Os computadores estavam funcionando e havia espaço para metade de uma sala, mas o único som ouvido era o das aulas de Educação Física na quadra ao lado. O lugar parecia mais um museu de equipamentos.</p>
+<p>Então, surge a pergunta:</p>
+<blockquote class="blockquote">
+<p>Por que o laboratório está vazio?</p>
+</blockquote>
+<p>Seria falta de computadores, de programas educativos, ou outro fator explica a baixa adesão em turno? Resolvi investigar.</p>
+</section>
+<section id="sobre-o-laboratório" class="level2">
+<h2 class="anchored" data-anchor-id="sobre-o-laboratório">Sobre o laboratório</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Alerta de dados e estatísticas ☝️🤓</p>
+</div>
+</div>
+<p>O laboratório conta com dois perfis de hardware nos computadores, nos quais distingui, de forma nada criativa, entre computadores “novos” e “antigos”. Segue o perfil de hardware de cada um:</p>
+<div id="tbl-perfil-hardware" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-perfil-hardware-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;1: Perfis de hardware dos computadores (2024-2026)
+</figcaption>
+<div aria-describedby="tbl-perfil-hardware-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 40%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Perfil Antigo</th>
+<th>Perfil Novo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Processador</td>
+<td>Intel Celeron 2.22 GHz 1 núcleo</td>
+<td>Intel i5 3.33 GHz 3 núcleos</td>
+</tr>
+<tr class="even">
+<td>Memória RAM</td>
+<td>4GB DDR3</td>
+<td>8GB DDR4</td>
+</tr>
+<tr class="odd">
+<td>Memória HDD</td>
+<td>80GB HDD SATA</td>
+<td>256GB SSD SATA</td>
+</tr>
+<tr class="even">
+<td>GPU dedicada</td>
+<td>Ausente</td>
+<td>Ausente</td>
+</tr>
+<tr class="odd">
+<td>Data de aquisição</td>
+<td>De 2007 a 2009</td>
+<td>A partir de 2021</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Também contei os computadores de cada perfil ao longo do tempo. Alguns computadores antigos foram “aposentados” na medida que adquirimos novos através do <a href="https://www.fnde.gov.br/1ccr/pdde.html">PDDE (Programa Dinheiro Direto na Escola)</a>.</p>
+<p>Vale dizer que nenhum computador ou qualquer um de seus componentes foram descartados. As peças foram e serão utilizadas para manutenção, exposição didática ou outros fins.</p>
+<div id="cell-fig-pcs-labinfo" class="cell">
+<div id="fig-pcs-labinfo" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pcs-labinfo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+
+<style>
+  #altair-viz-d3814962e18c48f280efe3481ed79f78.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-d3814962e18c48f280efe3481ed79f78.vega-embed details,
+  #altair-viz-d3814962e18c48f280efe3481ed79f78.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-d3814962e18c48f280efe3481ed79f78"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-d3814962e18c48f280efe3481ed79f78") {
+      outputDiv = document.getElementById("altair-viz-d3814962e18c48f280efe3481ed79f78");
+    }
+
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@6?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@6.1.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@7?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      let deps = ["vega-embed"];
+      require(deps, displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "6")
+        .then(() => maybeLoadScript("vega-lite", "6.1.0"))
+        .then(() => maybeLoadScript("vega-embed", "7"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-cd886d907b17bf263213de79889ff501"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "profile_friendly", "scale": {"range": ["#2780e3", "#20639b"]}, "sort": "descending", "title": "Perfil", "type": "nominal"}, "tooltip": [{"field": "period", "title": "Per\u00edodo", "type": "nominal"}, {"field": "profile_friendly", "title": "Perfil", "type": "nominal"}, {"field": "quantity", "title": "Quantidade", "type": "quantitative"}], "x": {"axis": {"labelAngle": -45}, "field": "period", "title": "Per\u00edodo (Ano-Semestre)", "type": "nominal"}, "y": {"field": "quantity", "title": "Quantidade Total", "type": "quantitative"}}, "title": "Evolu\u00e7\u00e3o por Perfil", "width": "container", "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json", "datasets": {"data-cd886d907b17bf263213de79889ff501": [{"year": 2024, "semester": 2, "profile": "new", "quantity": 4, "period": "2024-2", "profile_friendly": "Perfil novo"}, {"year": 2024, "semester": 2, "profile": "old", "quantity": 2, "period": "2024-2", "profile_friendly": "Perfil antigo"}, {"year": 2025, "semester": 1, "profile": "new", "quantity": 7, "period": "2025-1", "profile_friendly": "Perfil novo"}, {"year": 2025, "semester": 1, "profile": "old", "quantity": 2, "period": "2025-1", "profile_friendly": "Perfil antigo"}, {"year": 2025, "semester": 2, "profile": "new", "quantity": 7, "period": "2025-2", "profile_friendly": "Perfil novo"}, {"year": 2025, "semester": 2, "profile": "old", "quantity": 3, "period": "2025-2", "profile_friendly": "Perfil antigo"}, {"year": 2026, "semester": 1, "profile": "new", "quantity": 8, "period": "2026-1", "profile_friendly": "Perfil novo"}, {"year": 2026, "semester": 1, "profile": "old", "quantity": 2, "period": "2026-1", "profile_friendly": "Perfil antigo"}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pcs-labinfo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Evolução da quantidade de computadores por perfil ao longo do período
+</figcaption>
+</figure>
+</div>
+</div>
+<p>Independente do hardware, os computadores contavam, basicamente, com:</p>
+<ul>
+<li><a href="https://br-linux.org/2014/01/linux-educacional-50.html">Linux Educacional 5.0</a> em 2024 e <a href="https://lubuntu.me/bionic-released/">Lubuntu 18.04</a> a partir de 2025;</li>
+<li><a href="https://gcompris.net/index-pt_BR.html">GCompris</a> e alguns softwares educacionais do <a href="https://apps.kde.org/pt-br/categories/education/">KDE</a>;</li>
+<li>Pacote <a href="https://pt-br.libreoffice.org/">LibreOffice</a> para criação e edição de documentos;</li>
+</ul>
+</section>
+<section id="investigação" class="level2">
+<h2 class="anchored" data-anchor-id="investigação">Investigação</h2>
+<p>Mesmo com limitações, os computadores e programas disponíveis já permitiam atividades pedagógicas interessantes. Nada revolucionário, mas o suficiente para ampliar o ensino em sala de aula.</p>
+<p>A pergunta, então, seguia:</p>
+<blockquote class="blockquote">
+<p>Se o laboratório existe, funciona e está disponível, por que os professores quase não o utilizam como suporte fora do contraturno?</p>
+</blockquote>
+<p>Procurando formas de criar uma apresentação sobre Fake News, encontrei a <a href="https://tede2.pucrs.br/tede2/handle/tede/10334">dissertação</a> da professora <a href="https://br.linkedin.com/in/raizaroznieski">Raiza Roniestky</a>. O trabalho como todo é muito interessante, para quem deseja se aprofundar mais sobre o assunto.</p>
+<p>Em especial, nas páginas 74 e 75, a autora defende que a resistência de professores para a adoção de novas medidas, especialmente as dirigidas pelas tecnologias, acontece porque não há participação ativa do corpo docente. Uma vez que as decisões são tomadas “de cima para baixo”, o engajamento acaba se tornando, naturalmente, baixo.</p>
+<p>Acrescento que a ausência de participação ativa dos professores acaba por privá-los de uma de suas tarefas mais importantes: a adaptação de conteúdos. Em outras palavras, não adianta termos computadores e programas educativos se eles não servem para o contexto de suas aulas.</p>
+<p>Além disso, assume-se que os professores estejam cientes das capacidades dos laboratórios de informática dentro de cada escola, o que não necessariamente é uma verdade. É possível que o corpo docente sequer tenha conhecimento dos programas educacionais e atividades que possam ser realizadas dentro do laboratório. Ainda: não só as práticas em computador são relevantes, mas a computação desplugada pode ser uma ferramenta poderosa para consolidar um ou outro conceito discutido em sala.</p>
+</section>
+<section id="problema" class="level2">
+<h2 class="anchored" data-anchor-id="problema">Problema</h2>
+<p>Ao assumir a missão de ampliar o uso da Educação Digital na escola, percebi algo importante: havia <strong>demanda</strong> de professores e alunos por melhores experiências de aprendizagem, e também havia <strong>oferta</strong>, na forma de computadores, horários disponíveis e infraestrutura já instalada.</p>
+<p>Ou seja: o problema não era ausência total de recursos, mas na adesão do corpo docente. Agora, a pergunta tornou-se:</p>
+<blockquote class="blockquote">
+<p>Como criar um ambiente que permita que docentes e discentes efetivamente usufruam da Educação Digital na prática escolar?</p>
+</blockquote>
+<p>É um problema técnico, pedagógico e institucional ao mesmo tempo. Justamente por isso, ele exige uma solução arquitetada.</p>
+</section>
+<section id="próximos-passos" class="level2">
+<h2 class="anchored" data-anchor-id="próximos-passos">Próximos passos</h2>
+<p>Se você, surpreendentemente, chegou até aqui, deve querer saber a próxima parte da história.</p>
+<p>No próximo texto, apresento o levantamento de requisitos e o primeiro esboço da solução proposta: como transformar um conjunto de computadores em um espaço relevante para a educação na escola.</p>
+<p>Nos vemos lá!</p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

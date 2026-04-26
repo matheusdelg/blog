@@ -4,7 +4,49 @@
     "href": "index.html",
     "title": "blog",
     "section": "",
-    "text": "No matching items"
+    "text": "Labinfo: Introdução\n\n\nUm sistema replicável, escalável, gratuito, de código aberto — arquitetado para melhorar a adesão de práticas da Educação Digital em escolas públicas\n\n\n\nEducação Digital\n\nArch Linux\n\nOpen Source\n\nSoberania Digital\n\n\n\n\n\n\n\n\n\nApr 15, 2026\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/labinfo/01-intro/index.html",
+    "href": "posts/labinfo/01-intro/index.html",
+    "title": "Labinfo: Introdução",
+    "section": "",
+    "text": "No primeiro post da série, conto como este projeto surgiu — a partir de sua problemática."
+  },
+  {
+    "objectID": "posts/labinfo/01-intro/index.html#cenário",
+    "href": "posts/labinfo/01-intro/index.html#cenário",
+    "title": "Labinfo: Introdução",
+    "section": "Cenário",
+    "text": "Cenário\nEm 2024, comecei a trabalhar como técnico de multimeios em uma escola pública da minha cidade. Entre várias responsabilidades, cuidar do laboratório de informática rapidamente se revelou a mais importante.\nLogo nas primeiras semanas, percebi um padrão estranho: fora os horários reservados para aulas específicas de informática, o laboratório permanecia quase vazio. Os computadores estavam funcionando e havia espaço para metade de uma sala, mas o único som ouvido era o das aulas de Educação Física na quadra ao lado. O lugar parecia mais um museu de equipamentos.\nEntão, surge a pergunta:\n\nPor que o laboratório está vazio?\n\nSeria falta de computadores, de programas educativos, ou outro fator explica a baixa adesão em turno? Resolvi investigar."
+  },
+  {
+    "objectID": "posts/labinfo/01-intro/index.html#sobre-o-laboratório",
+    "href": "posts/labinfo/01-intro/index.html#sobre-o-laboratório",
+    "title": "Labinfo: Introdução",
+    "section": "Sobre o laboratório",
+    "text": "Sobre o laboratório\n\n\n\n\n\n\nNote\n\n\n\nAlerta de dados e estatísticas ☝️🤓\n\n\nO laboratório conta com dois perfis de hardware nos computadores, nos quais distingui, de forma nada criativa, entre computadores “novos” e “antigos”. Segue o perfil de hardware de cada um:\n\n\n\nTabela 1: Perfis de hardware dos computadores (2024-2026)\n\n\n\n\n\n\n\n\n\n\n\nPerfil Antigo\nPerfil Novo\n\n\n\n\nProcessador\nIntel Celeron 2.22 GHz 1 núcleo\nIntel i5 3.33 GHz 3 núcleos\n\n\nMemória RAM\n4GB DDR3\n8GB DDR4\n\n\nMemória HDD\n80GB HDD SATA\n256GB SSD SATA\n\n\nGPU dedicada\nAusente\nAusente\n\n\nData de aquisição\nDe 2007 a 2009\nA partir de 2021\n\n\n\n\n\n\nTambém contei os computadores de cada perfil ao longo do tempo. Alguns computadores antigos foram “aposentados” na medida que adquirimos novos através do PDDE (Programa Dinheiro Direto na Escola).\nVale dizer que nenhum computador ou qualquer um de seus componentes foram descartados. As peças foram e serão utilizadas para manutenção, exposição didática ou outros fins.\n\n\n\n\n\n\n\n\n\n\nFigura 1: Evolução da quantidade de computadores por perfil ao longo do período\n\n\n\n\nIndependente do hardware, os computadores contavam, basicamente, com:\n\nLinux Educacional 5.0 em 2024 e Lubuntu 18.04 a partir de 2025;\nGCompris e alguns softwares educacionais do KDE;\nPacote LibreOffice para criação e edição de documentos;"
+  },
+  {
+    "objectID": "posts/labinfo/01-intro/index.html#investigação",
+    "href": "posts/labinfo/01-intro/index.html#investigação",
+    "title": "Labinfo: Introdução",
+    "section": "Investigação",
+    "text": "Investigação\nMesmo com limitações, os computadores e programas disponíveis já permitiam atividades pedagógicas interessantes. Nada revolucionário, mas o suficiente para ampliar o ensino em sala de aula.\nA pergunta, então, seguia:\n\nSe o laboratório existe, funciona e está disponível, por que os professores quase não o utilizam como suporte fora do contraturno?\n\nProcurando formas de criar uma apresentação sobre Fake News, encontrei a dissertação da professora Raiza Roniestky. O trabalho como todo é muito interessante, para quem deseja se aprofundar mais sobre o assunto.\nEm especial, nas páginas 74 e 75, a autora defende que a resistência de professores para a adoção de novas medidas, especialmente as dirigidas pelas tecnologias, acontece porque não há participação ativa do corpo docente. Uma vez que as decisões são tomadas “de cima para baixo”, o engajamento acaba se tornando, naturalmente, baixo.\nAcrescento que a ausência de participação ativa dos professores acaba por privá-los de uma de suas tarefas mais importantes: a adaptação de conteúdos. Em outras palavras, não adianta termos computadores e programas educativos se eles não servem para o contexto de suas aulas.\nAlém disso, assume-se que os professores estejam cientes das capacidades dos laboratórios de informática dentro de cada escola, o que não necessariamente é uma verdade. É possível que o corpo docente sequer tenha conhecimento dos programas educacionais e atividades que possam ser realizadas dentro do laboratório. Ainda: não só as práticas em computador são relevantes, mas a computação desplugada pode ser uma ferramenta poderosa para consolidar um ou outro conceito discutido em sala."
+  },
+  {
+    "objectID": "posts/labinfo/01-intro/index.html#problema",
+    "href": "posts/labinfo/01-intro/index.html#problema",
+    "title": "Labinfo: Introdução",
+    "section": "Problema",
+    "text": "Problema\nAo assumir a missão de ampliar o uso da Educação Digital na escola, percebi algo importante: havia demanda de professores e alunos por melhores experiências de aprendizagem, e também havia oferta, na forma de computadores, horários disponíveis e infraestrutura já instalada.\nOu seja: o problema não era ausência total de recursos, mas na adesão do corpo docente. Agora, a pergunta tornou-se:\n\nComo criar um ambiente que permita que docentes e discentes efetivamente usufruam da Educação Digital na prática escolar?\n\nÉ um problema técnico, pedagógico e institucional ao mesmo tempo. Justamente por isso, ele exige uma solução arquitetada."
+  },
+  {
+    "objectID": "posts/labinfo/01-intro/index.html#próximos-passos",
+    "href": "posts/labinfo/01-intro/index.html#próximos-passos",
+    "title": "Labinfo: Introdução",
+    "section": "Próximos passos",
+    "text": "Próximos passos\nSe você, surpreendentemente, chegou até aqui, deve querer saber a próxima parte da história.\nNo próximo texto, apresento o levantamento de requisitos e o primeiro esboço da solução proposta: como transformar um conjunto de computadores em um espaço relevante para a educação na escola.\nNos vemos lá!"
   },
   {
     "objectID": "about.html",
