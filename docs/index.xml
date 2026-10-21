@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Direto ao ponto</title>
+<link>https://your-website-url.example.com/</link>
+<atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
+<description>Algumas notas sobre o que eu já vi</description>
+<generator>quarto-1.10.19</generator>
+<lastBuildDate>Tue, 20 Oct 2026 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Meu Home-Studio</title>
+  <dc:creator>Matheus Delgado</dc:creator>
+  <link>https://your-website-url.example.com/posts/home-studio/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Sem muita enrolação, queria contar como montei e o que contém meu home studio para gravar minhas próprias músicas. Deixarei os links de download dos programas e VSTs que costumo usar. São todos gratuitos. No final, monto um pack desses conteúdos para download. Espero que goste!</p>
+<div class="alert alert-warning">
+<p><strong>Link do donwload do pack:</strong></p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://drive.google.com/file/d/1IN4SfKHlvxo6JBNz1TVlthA7v3CWujX8/view?usp=drive_link">Download do pack</a></p>
+</div>
+</div>
+<section id="hardware" class="level2">
+<h2 class="anchored" data-anchor-id="hardware">Hardware</h2>
+<p>A gravação, edição, mixagem e masterização das músicas acontece -obviamente- em um computador. Usei um Desktop caseiro, o nosso “PC Gamer” para instalar esses programas. Como não temos fãs de jogos AAA em casa, o hardware consegue lidar bem com os jogos da Steam e os softwares de edição de áudio sem maiores problemas. Eis as especificações do desktop:</p>
+<ul>
+<li><strong>Processador:</strong> Intel i7 3770</li>
+<li><strong>Memória RAM:</strong> 16GB DDR3</li>
+<li><strong>Memória Secundária:</strong> 1TB SSD</li>
+<li><strong>GPU:</strong> N/A</li>
+</ul>
+<p>Claro, este “possante” exige uma interface de áudio. Felizmente, tinha uma UCA-222 da Behringer guardada comigo desde 2011, nunca usada até então. Para completar o “kit”, liguei a interface a uma mesa de som de dois canais white-label, suficiente para ligar um canal com Phantom Power em um condensador (BM-800 versão Behringer) junto com outra entrada em linha (tipicamente para guitarras ou para um SDM-50 da Stagg, clone do “Irmão do Jorel” dos microfones, o SM-58).</p>
+<p>Atualmente, criei um sistema de cabos que me permite alternar as mixagens para um par de amplificadores de guitarra (Meteoro ADR-80 e Sound Maker G-20) modificados para uma resposta mais “flat” ou para meu ATH-M20x. Ainda, costumo usar um par de fones da Sony que comprei de minha irmã em 2020 e que funcionam muito bem até hoje.</p>
+<p>Finalmente, há pouco comprei um controlador MIDI simples, mas que ajuda a criar linhas de percurssão e alguns pads. Uso o SMK-37 Pro da M-Vave direto no computador, o que me permite criar automações e controlar minha DAW de forma mais “analógica”.</p>
+</section>
+<section id="daw" class="level2">
+<h2 class="anchored" data-anchor-id="daw">DAW</h2>
+<p>Por muito tempo, usei o Audacity como meu editor de áudio principal. Se até hoje a versão 4.0 anda em alpha, há dois anos, usar essa ferramenta como DAW era inviável (especialmente pela falta de suporte de processamentos on-line das faixas).</p>
+<p>Dentre as opções, gostei do Reaper. Simples, gratuito (para avaliação por tempo indeterminado, então se você tiver dinheiro suficiente para financiar o projeto e goste dele, faça isso) e cheio de funcionalidades.</p>
+<div class="alert alert-info">
+<p>Faça o download do Reaper direto do site oficial</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://www.reaper.fm/download.php">Download do Reaper</a></p>
+</div>
+</div>
+<p>Outro detalhe importante para escolher o Reaper é o canal “<a href="https://www.youtube.com/@ReaperBrasil">Reaper Brasil</a>” No YouTube, que tem várias dicas de plugins e técnicas dessa DAW.</p>
+</section>
+<section id="driver-de-áudio" class="level2">
+<h2 class="anchored" data-anchor-id="driver-de-áudio">Driver de áudio</h2>
+<p>Tentar gravar faixas de áudio com essa configuração gera <strong>latência</strong>, que é o atraso entre o som gerado no seu instrumento e o ouvido no computador. Você pode configurar a DAW para diminuir/aumentar o buffer ou compensar a latência com pré-atraso, mas o que realmente resolve esse problema é a instalação de um driver para processamento de baixa latência de áudio. No Linux, há kernels específicos para isso, como no caso do Ubuntu Studio. No Windows, vamos de ASIO4ALL, que é uma distribuição gratuita do driver ASIO.</p>
+<div class="alert alert-info">
+<p>Faça o download do driver direto do site oficial</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://asio4all.org/about/download-asio4all">Download do ASIO4ALL</a></p>
+</div>
+</div>
+</section>
+<section id="plugins" class="level2">
+<h2 class="anchored" data-anchor-id="plugins">Plugins</h2>
+<p>Embora use os recursos nativos do Reaper com frequência, alguns plugins tem sonoridades, respostas, funcionamentos ou interfaces mais agradáveis e são gratuitos. A maior parte das recomendações vêm do site “plugins4free”, que, como nome diz, disponibiliza plugins sem custo.</p>
+<section id="equalizadores" class="level3">
+<h3 class="anchored" data-anchor-id="equalizadores">Equalizadores</h3>
+<div class="columns">
+<div class="column" style="width:48%;">
+<section id="reeq" class="level4">
+<h4 class="anchored" data-anchor-id="reeq">ReEQ</h4>
+<p>Uma versão inspirada no ProQ3 da Fabfilter. Equalizador simples, transparente e muito simples de usar.</p>
+<div class="alert alert-info">
+<p>Download do ReEQ</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://www.realinks.net/links/reeq/">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:4%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:48%;">
+<section id="tdr-nova" class="level4">
+<h4 class="anchored" data-anchor-id="tdr-nova">TDR Nova</h4>
+<p>Outro equalizador paramétrico transparente e simples de usar. Permite equalização dinâmica.</p>
+<div class="alert alert-info">
+<p>Download do TDR Nova</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://www.tokyodawn.net/tdr-nova/">Download</a></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:48%;">
+<section id="efektor-gq3607" class="level4">
+<h4 class="anchored" data-anchor-id="efektor-gq3607">Efektor GQ3607</h4>
+<p>Equalizador gráfico de 7 bandas semelhante ao Boss GE-7 e Boss GEB-7. Útil para calibrar o timbre de uma guitarra ou baixo antes de enviar para o plugin de amplificador.</p>
+<div class="alert alert-info">
+<p>Download do Efektor GQ3607</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://www.kuassa.com/products/efektor-gq3607-graphic-equalizer/">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:4%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:48%;">
+<section id="rarese" class="level4">
+<h4 class="anchored" data-anchor-id="rarese">RareSE</h4>
+<p>Um plugin com sonoridade e controles parecidos com o Pultec. Tem excelente resposta e adiciona um timbre característico mesmo em flat.</p>
+<div class="alert alert-info">
+<p>Download do RareSE</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/3088">Download</a></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</section>
+<section id="compressores" class="level3">
+<h3 class="anchored" data-anchor-id="compressores">Compressores</h3>
+<div class="columns">
+<div class="column" style="width:48%;">
+<section id="fetish" class="level4">
+<h4 class="anchored" data-anchor-id="fetish">FETish</h4>
+<p>Uma versão gratuita semelhante aos compressores 1176 e 1176-Rev A. São compressores rápidos e agressivos, muito usados em percurssão, guitarras e compressão paralela (NY) com timbre residual característico.</p>
+<div class="alert alert-info">
+<p>Download do FETish</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/2775">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:4%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:48%;">
+<section id="lala" class="level4">
+<h4 class="anchored" data-anchor-id="lala">LALA</h4>
+<p>Versão semelhante ao clássico LA-2A, um compressor óptico e transparente, ideal para voz, baixo e outros instrumentos de dinâmica mais lenta. Também tem um timbre residual característico.</p>
+<div class="alert alert-info">
+<p>Download do LALA</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/3221">Download</a></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:48%;">
+<section id="slax" class="level4">
+<h4 class="anchored" data-anchor-id="slax">SLAX</h4>
+<p>Outra versão do LA-2A, este compressor tem melhor recepção da comunidade e é bem eficiente para mixar qualquer instrumento.</p>
+<div class="alert alert-info">
+<p>Download do SLAX</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/2593">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:4%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:48%;">
+<section id="busterse" class="level4">
+<h4 class="anchored" data-anchor-id="busterse">BusterSE</h4>
+<p>Um compressor de console para barramento (Bus Compressor) com timbre residual analógico, particularmente eficiente para compressão de cola.</p>
+<div class="alert alert-info">
+<p>Download do BusterSE</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/3215">Download</a></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</section>
+<section id="delay" class="level3">
+<h3 class="anchored" data-anchor-id="delay">Delay</h3>
+<div class="columns">
+<div class="column" style="width:48%;">
+<section id="analog-rack-delay" class="level4">
+<h4 class="anchored" data-anchor-id="analog-rack-delay">Analog Rack Delay</h4>
+<p>Delay/Echo da Nembrini Audio, com VSTs baseados em circuitos analógicos. Tem degradação natural típica de equipamentos analógicos</p>
+<div class="alert alert-info">
+<p>Download do Analog Rack Delay</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/3429">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:4%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:48%;">
+<section id="dd-delay" class="level4">
+<h4 class="anchored" data-anchor-id="dd-delay">DD Delay</h4>
+<p>Outro plugin de delay analógico com boa resposta e controles simples. Costumo usar em vocais e/ou instrumentos que pedem delays mais sutis.</p>
+<div class="alert alert-info">
+<p>Download do DD Delay</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/2792">Download</a></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</section>
+<section id="reverb" class="level3">
+<h3 class="anchored" data-anchor-id="reverb">Reverb</h3>
+<section id="oril-river" class="level4">
+<h4 class="anchored" data-anchor-id="oril-river">Oril River</h4>
+<p>Reverb algorítmico com excelente resposta, bons presets e amplo controle da sonoridade. Uso em conjunto com o ReaVerbate, nativo do Reaper para criar salas, corredores e plate.</p>
+<div class="alert alert-info">
+<p>Download do Oril River</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/2538">Download</a></p>
+</div>
+</div>
+</section>
+</section>
+<section id="saturador" class="level3">
+<h3 class="anchored" data-anchor-id="saturador">Saturador</h3>
+<p>Saturation Knob, GSAT+, Burier e IVGI/IVGI2</p>
+<div class="columns">
+<div class="column" style="width:48%;">
+<section id="saturation-knob" class="level4">
+<h4 class="anchored" data-anchor-id="saturation-knob">Saturation Knob</h4>
+<p>Saturador simples e com ótima respostas para todas as frequências. Utilizo em insert nas faixas de bumbo e caixa, ajustando as frequências.</p>
+<div class="alert alert-info">
+<p>Download do Saturation Knob</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://www.softube.com/plug-ins/saturation-knob">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:4%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:48%;">
+<section id="burier" class="level4">
+<h4 class="anchored" data-anchor-id="burier">Burier</h4>
+<p>Outro plugin de saturação com apenas um knob (na verdade, ele também tem filtros passa-baixas e passa-altas) ideal para o barramento/bus de guitarras.</p>
+<div class="alert alert-info">
+<p>Download do Burier</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/3348">Download</a></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:48%;">
+<section id="gsat" class="level4">
+<h4 class="anchored" data-anchor-id="gsat">GSAT+</h4>
+<p>Saturador com medidor VU ideal para saturação de barramentos (bus), permite ajustar harmônicos, oversampling e outros contoles complexos.</p>
+<div class="alert alert-info">
+<p>Download do GSAT+</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/3457">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:4%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:48%;">
+<section id="ivgiivgi2" class="level4">
+<h4 class="anchored" data-anchor-id="ivgiivgi2">IVGI/IVGI2</h4>
+<p>Plugin de saturação com VU e ótima resposta sonora. Costumo usar em vozes e backing vocals para “aquecer” a mix.</p>
+<div class="alert alert-info">
+<p>Download do IVGI/IVGI2</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/1682">Download</a></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</section>
+<section id="outros" class="level3">
+<h3 class="anchored">Outros</h3>
+<div class="columns">
+<div class="column" style="width:29%;">
+<section id="analog-rack-chorus" class="level4">
+<h4 class="anchored" data-anchor-id="analog-rack-chorus">Analog Rack Chorus</h4>
+<p>Outro VST da Nembrini, funciona muito bem como chorus para vozes e guitarras. Semelhante ao EHX Small Clone, presente em muitas músicas dos anos 90.</p>
+<div class="alert alert-info">
+<p>Download do Analog Rack Chorus</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/3430">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:5%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:29%;">
+<section id="vocal-king" class="level4">
+<h4 class="anchored" data-anchor-id="vocal-king">Vocal King</h4>
+<p>VST único que mistura compresor, saturador, limiter e booster. Focado para melhorar performances de voz. Tem excelentes presets e dão vida à voz gravada.</p>
+<div class="alert alert-info">
+<p>Download do Vocal King</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/2507">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:5%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:29%;">
+<section id="dee-doubler" class="level4">
+<h4 class="anchored" data-anchor-id="dee-doubler">Dee Doubler</h4>
+<p>Faz a dobra automática de vozes, ajustando fases e limpando algumas frequências. Muito usado para emular vocais dobrados, presente desde Beatles até Alice in Chains.</p>
+<div class="alert alert-info">
+<p>Download do Dee Doubler</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/3927">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="columns">
+<section id="ncar" class="level4">
+<h4 class="anchored" data-anchor-id="ncar">NCAR</h4>
+<p>Simulador de mesa de som. Além de trazer um timbre analógico característico (e muito agradável), permite fazer o controle de ganhos (gain staging). Recomendo colocar como primeiro plugin da cadeia de efeitos de cada faixa gravada em Mic/DI.</p>
+<div class="alert alert-info">
+<p>Download do NCAR</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/3115">Download</a></p>
+</div>
+</div>
+</section><div class="columns">
+<div class="column" style="width:29%;">
+<section id="reviber" class="level4">
+<h4 class="anchored" data-anchor-id="reviber">Reviber</h4>
+<p>Excitador de harmônicos. Permite aumentar os harmônicos das frequências mais graves e das agudas. Nos agudos, siga a regra dos 50%: Depois de encontrar o valor ideal, reduza-o para a metade. Use apenas na masterização.</p>
+<div class="alert alert-info">
+<p>Download do Reviber</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/3021">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:5%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:29%;">
+<section id="js-inflator" class="level4">
+<h4 class="anchored" data-anchor-id="js-inflator">JS Inflator</h4>
+<p>Um clone 100% fiel ao Inflator, que é um plugin muito utilizado na masterização de músicas mainstream. Aumenta frequências e tende a expandir o estéreo da mixagem. Encontre a release compatível com seu sistema operacional.</p>
+<div class="alert alert-info">
+<p>Download do JS Inflator</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://github.com/Kiriki-liszt/JS_Inflator/releases">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:5%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:29%;">
+<section id="mystique" class="level4">
+<h4 class="anchored" data-anchor-id="mystique">Mystique</h4>
+<p>Simula uma máquina de fita. O timbre deste plugin é sutil, e começa a ser percebido se a mix está em 0 dBVU na entrada. Confere uma sonoridade analógica de hits dos anos 60/70 e 2000/2010. Use na masterização, logo antes do limiter.</p>
+<div class="alert alert-info">
+<p>Download do Mystique</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/2544">Download</a></p>
+</div>
+</div>
+</section>
+</div>
+</div><div class="columns">
+<div class="column" style="width:48%;">
+<section id="wider" class="level4">
+<h4 class="anchored" data-anchor-id="wider">Wider</h4>
+<p>Expansor de estéreo, ideal na masterização para ampliar o espaço nos instrumentos.</p>
+<div class="alert alert-info">
+<p>Download do Wider</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://polyversemusic.com/products/wider/">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:4%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:48%;">
+<section id="loudmax" class="level4">
+<h4 class="anchored" data-anchor-id="loudmax">LoudMax</h4>
+<p>Limiter simples e transparente, ideal para a masterização. Use como último plugin.</p>
+<div class="alert alert-info">
+<p>Download do LoudMax</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/2060">Download</a></p>
+</div>
+</div>
+</section>
+</div>
+</div><section id="vstis" class="level2">
+<h2 class="anchored" data-anchor-id="vstis">VSTis</h2>
+<p>São versões virtuais (VSTs) de instrumentos famosos (e caros) com sonoridade próxima o bastante dos originais, considerando que são gratuitos.</p>
+<section id="pads-e-teclados" class="level3">
+<h3 class="anchored">Pads e Teclados</h3>
+<div class="columns">
+<div class="column" style="width:29%;">
+<section id="collab3" class="level4">
+<h4 class="anchored" data-anchor-id="collab3">CollaB3</h4>
+<p>Excelente simulador de Hammond gratuito. Se a rotação do speaker ficar travada no 1, use uma automação para fixar na vel. 2.</p>
+<div class="alert alert-info">
+<p>Download do CollaB3</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/3117">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:5%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:29%;">
+<section id="sweetcase" class="level4">
+<h4 class="anchored" data-anchor-id="sweetcase">Sweetcase</h4>
+<p>Mistura de Rhodes e piano elétrico. Particularmente, gosto do preset padrão, e ajusto o “bell” dependendo da música.</p>
+<div class="alert alert-info">
+<p>Download do Sweetcase</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/3252">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:5%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:29%;">
+<section id="minimogueva" class="level4">
+<h4 class="anchored" data-anchor-id="minimogueva">MiniMogueVA</h4>
+<p>Simulador de Mini Moog gratuito. O preset padrão dele já lembra o riff clássico de “Tom Sawyer” do Rush. Muito usado em rock progressivo.</p>
+<div class="alert alert-info">
+<p>Download do MiniMogueVA</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/405">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="columns">
+<div class="column" style="width:29%;">
+<section id="ticky-clav-2" class="level4">
+<h4 class="anchored" data-anchor-id="ticky-clav-2">Ticky Clav 2</h4>
+<p>Simulador do Honher Clavinet gratuito. Essencial para músicas no estilo de Steve Wonder ou funk dos anos 70.</p>
+<div class="alert alert-info">
+<p>Ticky Clav 2</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/2986">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:5%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:29%;">
+<section id="merlittzer" class="level4">
+<h4 class="anchored" data-anchor-id="merlittzer">Merlittzer</h4>
+<p>Excelente simulador de Wurlitzer gratuito. É um timbre típico dos anos 70/80, com cauda longa e um toque de chorus.</p>
+<div class="alert alert-info">
+<p>Download do Merlittzer</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/2322">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:5%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:29%;">
+<section id="dexed" class="level4">
+<h4 class="anchored" data-anchor-id="dexed">Dexed</h4>
+<p>Simulador do famoso Yamaha-DX7 gratuito. Essencial para rock dos anos 80, usado em “Walk of Life” e vários outros de Dire Straits.</p>
+<div class="alert alert-info">
+<p>Download do Dexed</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/2026">Download</a></p>
+</div>
+</div>
+</section>
+</div>
+</div><section id="surge-xt" class="level4">
+<h4 class="anchored" data-anchor-id="surge-xt">Surge XT</h4>
+<p>Para ter mais controle dos timbres dos pads, recomendo o Surge XT. É um sintetizador subtrativo, com várias configurações, tipos de ondas, LFOs, cadeias de efeitos, filtros, presets, etc. que é difícil acreditar que este é um plugin gratuito.</p>
+<div class="alert alert-info">
+<p>Download do Surge XT</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/3680">Download</a></p>
+</div>
+</div>
+</section><section id="pianos" class="level3">
+<h3 class="anchored" data-anchor-id="pianos">Pianos</h3>
+<div class="columns">
+<div class="column" style="width:48%;">
+<section id="front-piano" class="level4">
+<h4 class="anchored" data-anchor-id="front-piano">4Front Piano</h4>
+<p>VSTi de piano leve e com sonoridade limpa.</p>
+<div class="alert alert-info">
+<p>Download do A4FrontPiano</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/971">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:4%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:48%;">
+<section id="keyzone-classic" class="level4">
+<h4 class="anchored" data-anchor-id="keyzone-classic">Keyzone Classic</h4>
+<p>Funciona como piano de cauda ou elétrico.</p>
+<div class="alert alert-info">
+<p>Download do Keyzone Classsic.</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/2848">Download</a></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</section><section id="strings" class="level3">
+<h3 class="anchored" data-anchor-id="strings">Strings</h3>
+<section id="bbc-orchestra" class="level4">
+<h4 class="anchored" data-anchor-id="bbc-orchestra">BBC Orchestra</h4>
+<p>Um pacote com vários instrumentos gravados pela orquestra sinfônica do canal BBC, com ótima qualidade sonora e diferentes controles.</p>
+<div class="alert alert-info">
+<p>Download do BCC Orchestra.</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://www.spitfireaudio.com/products/bbc-symphony-orchestra-discover">Download</a></p>
+</div>
+</div>
+</section>
+</section><section id="baixos" class="level3">
+<h3 class="anchored" data-anchor-id="baixos">Baixos</h3>
+<div class="columns">
+<div class="column" style="width:48%;">
+<section id="ample-bass" class="level4">
+<h4 class="anchored" data-anchor-id="ample-bass">Ample Bass</h4>
+<p>Bom simulador de baixo elétrico. Exige que as notas estejam uma oitava acima do esperado.</p>
+<div class="alert alert-info">
+<p>Download do Ample Bass</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/2505">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:4%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:48%;">
+<section id="box-of-bass" class="level4">
+<h4 class="anchored" data-anchor-id="box-of-bass">Box of Bass</h4>
+<p>Embora não seja um VSTi, permite tocar linhas de baixo em guitarras com boa fidelidade.</p>
+<div class="alert alert-info">
+<p>Download do Box of Bass.</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins.boxofrules.com/plugins/box-of-bass">Download</a></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</section><section id="baterias" class="level3">
+<h3 class="anchored" data-anchor-id="baterias">Baterias</h3>
+<div class="columns">
+<div class="column" style="width:48%;">
+<section id="mt-power-drumkit" class="level4">
+<h4 class="anchored" data-anchor-id="mt-power-drumkit">MT Power Drumkit</h4>
+<p>Simulador de baterias com timbre potente e comprimido, típico do hard-rock dos anos 80/90.</p>
+<div class="alert alert-info">
+<p>Download do MT Power Drumkit</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://plugins4free.com/plugin/2783">Download</a></p>
+</div>
+</div>
+</section>
+</div><div class="column" style="width:4%;">
+<!-- optional spacer column -->
+</div><div class="column" style="width:48%;">
+<section id="ssd-5.5-free" class="level4">
+<h4 class="anchored" data-anchor-id="ssd-5.5-free">SSD 5.5 Free</h4>
+<p>Criado por Steven Slate, é extremamente customizável e funciona também como sampler de bateria.</p>
+<div class="alert alert-info">
+<p>Download do SSD 5.5 Free</p>
+<div style="display:flex; align-items:center; justify-content: center;">
+<p><a class="btn btn-primary" href="https://stevenslatedrums.com/ssd5/free">Download</a></p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</section><section id="conclusão" class="level2">
+<h2 class="anchored" data-anchor-id="conclusão">Conclusão</h2>
+<p>Para instalar os plugins, execute o instalador ou copie os arquivos para a pasta <code>C:\Program Files\Steinberg\VstPlugins</code> ou <code>C:\Program Files\Common Files\VST3</code>. Outros exigem um processo de instalação direto na DAW. Nesse caso, sugiro pesquisar como instalá-los na internet.</p>
+<p>A escolha desses plugins foi gradual e específica para o tipo de música que gosto de fazer. Dependendo do estilo, alguns VSTs serão inúteis. Por isso, recomendo pesquisar no site “Plugins4Free” e em canais do YouTube com perfil parecido com o seu gosto musical.</p>
+<p>Confira também se o seu plugin é compatível com o sistema operacional e versão (32/64 bits). Além disso, veja se a sua DAW o suporta. No mais, espero que tenha gostado da leitura e recomendação. Até!</p>
+</section><section id="referênciaslinks-úteis" class="level2">
+<h2 class="anchored" data-anchor-id="referênciaslinks-úteis">Referências/Links úteis</h2>
+<ul>
+<li><a href="https://www.youtube.com/@ReaperBrasil">Reaper Brasil</a>: Canal com recomendações de plugins, mixagens e outros;</li>
+<li><a href="https://plugins4free.com">Plugins 4 Free</a>: Site com centenas de opções de plugins gratuitos e que não exige cadastro;</li>
+</ul>
+
+
+</section>
+</div>
+</section>
+</section>
+</div>
+</div>
+</section>
+</section>
+
+ ]]></description>
+  <category>música</category>
+  <guid>https://your-website-url.example.com/posts/home-studio/</guid>
+  <pubDate>Tue, 20 Oct 2026 03:00:00 GMT</pubDate>
+  <media:content url="https://your-website-url.example.com/posts/home-studio/thumb.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>
